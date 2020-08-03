@@ -13,7 +13,7 @@ module.exports = (env, argv) => ({
     entry: './src/app.js',
 
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         publicPath: '/',
         filename: '[name].js'
     },
@@ -62,15 +62,15 @@ module.exports = (env, argv) => ({
         }),
         new CopyWebpackPlugin([{
             from: path.resolve(__dirname, 'static'),
-            to: path.resolve(__dirname, 'dist'),
+            to: path.resolve(__dirname, 'docs'),
             toType: 'dir'
         }]),
         new SWPrecacheWebpackPlugin({
             cacheId: 'ATI',
             filename: 'ati-service-worker-cache.js',
-            staticFileGlobs: ['dist/**/*.{js,css}', '/'],
+            staticFileGlobs: ['docs/**/*.{js,css}', '/'],
             minify: true,
-            stripPrefix: 'dist/',
+            stripPrefix: 'docs/',
             dontCacheBustUrlsMatching: /\.\w{6}\./
         })
     ],

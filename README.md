@@ -2,12 +2,12 @@
 
 ## Run dev mode
 
-``` bash
+``` npm
 npm start
 ```
 
 ## Generate prod files
 
-``` bash
-npm build
+``` npm
+npm run build
 ```
