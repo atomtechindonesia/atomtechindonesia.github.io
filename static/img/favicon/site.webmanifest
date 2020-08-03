@@ -1,0 +1,14 @@
+{
+    "short_name": "ATI",
+    "name": "ATOM Tech Indonesia",
+    "icons": [
+        {
+            "src": "/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone"
+}
