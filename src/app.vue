@@ -20,6 +20,11 @@ export default {
         }
     },
     mounted() {
+        let path = localStorage.getItem('path')
+        if(path) {
+            localStorage.removeItem('path')
+            this.$router.push(`/${path}`)
+        }
         this.updateTitle()
     },
     methods: {
