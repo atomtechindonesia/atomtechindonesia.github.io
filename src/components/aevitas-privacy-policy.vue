@@ -28,9 +28,7 @@
           as in our Terms and Conditions, which is accessible at
           SGYX unless otherwise defined in this Privacy Policy.
         </p>
-        <p>
-          <h4>Information Collection and Use</h4>
-        </p>
+        <h4>Information Collection and Use</h4>
         <p>
           For a better experience, while using our Service, we
           may require you to provide us with certain personally
@@ -56,9 +54,7 @@
             </li>
           </ul>
         </div>
-        <p>
-          <h4>Log Data</h4>
-        </p>
+        <h4>Log Data</h4>
         <p>
           We want to inform you that whenever you
           use our Service, in a case of an error in the app
@@ -70,9 +66,7 @@
           the time and date of your use of the Service, and other
           statistics.
         </p>
-        <p>
-          <h4>Cookies</h4>
-        </p>
+        <h4>Cookies</h4>
         <p>
           Cookies are files with a small amount of data that are
           commonly used as anonymous unique identifiers. These are sent
@@ -88,9 +82,7 @@
           choose to refuse our cookies, you may not be able to use some
           portions of this Service.
         </p>
-        <p>
-          <h4>Service Providers</h4>
-        </p>
+        <h4>Service Providers</h4>
         <p>
           We may employ third-party companies and
           individuals due to the following reasons:
@@ -108,9 +100,7 @@
           them on our behalf. However, they are obligated not to
           disclose or use the information for any other purpose.
         </p>
-        <p>
-          <h4>Security</h4>
-        </p>
+        <h4>Security</h4>
         <p>
           We value your trust in providing us your
           Personal Information, thus we are striving to use commercially
@@ -119,9 +109,7 @@
           storage is 100% secure and reliable, and we cannot
           guarantee its absolute security.
         </p>
-        <p>
-          <h4>Links to Other Sites</h4>
-        </p>
+        <h4>Links to Other Sites</h4>
         <p>
           This Service may contain links to other sites. If you click on
           a third-party link, you will be directed to that site. Note
@@ -132,9 +120,7 @@
           privacy policies, or practices of any third-party sites or
           services.
         </p>
-        <p>
-          <h4>Children’s Privacy</h4>
-        </p>
+        <h4>Children’s Privacy</h4>
         <p>
           These Services do not address anyone under the age of 13.
           We do not knowingly collect personally
@@ -146,9 +132,7 @@
           personal information, please contact us so that
           we will be able to do necessary actions.
         </p>
-        <p>
-          <h4>Changes to This Privacy Policy</h4>
-        </p>
+        <h4>Changes to This Privacy Policy</h4>
         <p>
           We may update our Privacy Policy from
           time to time. Thus, you are advised to review this page
@@ -157,9 +141,7 @@
           this page.
         </p>
         <p>This policy is effective as of 2020-07-06</p>
-        <p>
-          <h4>Contact Us</h4>
-        </p>
+        <h4>Contact Us</h4>
         <p>
           If you have any questions or suggestions about our
           Privacy Policy, do not hesitate to contact us at projectaevitas@gmail.com.
