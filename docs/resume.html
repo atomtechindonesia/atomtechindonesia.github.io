@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        /*Font support for MAC*/
+        @font-face {
+            font-family: 'Century Gothic';
+            font-weight: normal;
+            font-style: normal;
+            src: local('Century Gothic'), url('/blobcontent/zty/fonts/CenturyGothic.ttf') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'Century Gothic';
+            font-weight: bold;
+            font-style: normal;
+            src: local('Century Gothic Bold'), url('/blobcontent/zty/fonts/CenturyGothicBold.ttf') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'Century Gothic';
+            font-weight: bold;
+            font-style: italic;
+            src: local('Century Gothic Bold Italic'), url('/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'Century Gothic';
+            font-weight: normal;
+            font-style: italic;
+            src: local('Century Gothic Italic'), url('/blobcontent/zty/fonts/CenturyGothicItalic.ttf') format('truetype')
+        }
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        font,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent
+        }
+
+        body {
+            line-height: 1;
+            text-align: left;
+            font-feature-settings: "liga"0;
+            -moz-font-feature-settings: "liga"off
+        }
+
+        #document.skn-trz6 ol,
+        #document.skn-trz6 ul {
+            list-style: none
+        }
+
+        #document.skn-trz6 table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: inherit;
+            color: inherit;
+            width: 100%
+        }
+
+        /*START content disc style for LI*/
+        #document.skn-trz6 ul,
+        #document.skn-trz6 li {
+            margin: 0;
+            padding: 0;
+            list-style-type: disc
+        }
+
+        #document.skn-trz6 ul li {
+            margin: 0 0 0 16px;
+            padding: 0
+        }
+
+        @-moz-document url-prefix() {
+            #document.skn-trz6 ul li {
+                margin: 0 0 0 12px;
+                padding: 0 0 0 3px
+            }
+        }
+
+        /*END content disc style for LI*/
+
+        /*common style*/
+        #document.skn-trz6 .txtBold {
+            font-weight: bold
+        }
+
+        #document.skn-trz6 .paddedline {
+            display: block
+        }
+
+        #document.skn-trz6 .pt5 {
+            padding-top: 5px
+        }
+
+        #document.skn-trz6 .pb5 {
+            padding-bottom: 5px
+        }
+
+        #document.skn-trz6 .word-break {
+            word-wrap: break-word
+        }
+
+        #document.skn-trz6 .disp-n {
+            display: none
+        }
+
+        /*For resume title - to be remove later*/
+
+        /* table skills */
+        #document.skn-trz6 table.skills,
+        .table_wrapper {
+            width: 100%;
+            margin-top: 0;
+            word-wrap: break-word
+        }
+
+        #document.skn-trz6 table.skills th,
+        table.skills td {
+            width: 20%;
+            text-align: center
+        }
+
+        #document.skn-trz6 table.skills .skillname,
+        #document.skn-trz6 table.skills .skillrating {
+            text-align: left;
+            width: 35%
+        }
+
+        #document.skn-trz6 table.skills .skillrating {
+            width: 20%
+        }
+
+        #document.skn-trz6 table.skills .skillyears,
+        #document.skn-trz6 table.skills .skilllast {
+            width: 19%
+        }
+
+        #document.skn-trz6 table.skills .pad1 {
+            width: 5%
+        }
+
+        #document.skn-trz6 .skills .pad2,
+        #document.skn-trz6 table.skills .pad3 {
+            width: 1%
+        }
+
+        /* document */
+        #document.skn-trz6 {
+            box-sizing: border-box;
+            padding: 20px 20px 20px 0;
+            border-left: 140px solid transparent !important;
+            color: #343434;
+            font-variant-ligatures: none;
+            line-height: 16px;
+            min-height: 792px
+        }
+
+        #document.skn-trz6 .name {
+            color: #373d48;
+            font-weight: 700;
+            overflow: hidden;
+            text-align: left;
+            display: table-cell;
+            min-height: 86px;
+            padding-bottom: 10px
+        }
+
+        #document.skn-trz6 .address .singlecolumn {
+            margin-left: 0 !important
+        }
+
+        #document.skn-trz6 .degreeGap {
+            margin-bottom: 4px
+        }
+
+        #document.skn-trz6 .locationGap {
+            margin-top: 4px
+        }
+
+        #document.skn-trz6 .heading {
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative
+        }
+
+        #document.skn-trz6 .sectiontitle {
+            color: #373d48;
+            line-height: 21px;
+            word-wrap: break-word
+        }
+
+        #document.skn-trz6 .firstparagraph {
+            padding-top: 0 !important
+        }
+
+        #document.skn-trz6 .parentContainer {
+            border-collapse: collapse;
+            display: table;
+            min-height: inherit;
+            table-layout: fixed;
+            width: 100%
+        }
+
+        /*monogram*/
+        #document.skn-trz6 .monogram {
+            position: absolute;
+            left: -103px;
+            top: 0;
+            bottom: 0
+        }
+
+        #document.skn-trz6 .monogram svg text {
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            text-transform: lowercase
+        }
+
+        /*leftBox and rightBox css*/
+        #document.skn-trz6 .left-box,
+        #document.skn-trz6 .right-box {
+            box-sizing: initial;
+            display: table-cell;
+            padding-left: 15px;
+            vertical-align: top
+        }
+
+        #document.skn-trz6 .left-box .firstsection {
+            margin: 0;
+            padding: 0;
+            min-height: 101px
+        }
+
+        #document.skn-trz6 .left-box .paddedline.date-content {
+            position: absolute;
+            margin-left: 0;
+            left: -125px
+        }
+
+        #document.skn-trz6 .paragraph,
+        #document.skn-trz6 .left-box .singlecolumn {
+            position: relative
+        }
+
+        #document.skn-trz6 .left-box .paragraph {
+            margin-left: 0
+        }
+
+        #document.skn-trz6 .section:empty {
+            display: none
+        }
+
+        #document.skn-trz6 .left-box .section {
+            border-left: 1px solid #d7d7d7;
+            margin-left: 12px;
+            padding-left: 25px;
+            position: relative
+        }
+
+        #document.skn-trz6 .left-box {
+            padding-left: 0;
+            padding-right: 15px
+        }
+
+        #document.skn-trz6 .left-box>.section:first-child {
+            border: 0
+        }
+
+        #document.skn-trz6 .firstsection+.section:before {
+            border: 1px solid #fff;
+            content: '';
+            left: -1px;
+            position: absolute;
+            top: 0
+        }
+
+        #document.skn-trz6 .left-box .singlecolumn:before {
+            background: #373d48;
+            border: 0;
+            border-radius: 100%;
+            content: "";
+            display: block;
+            height: 8px;
+            left: -29px;
+            position: absolute;
+            width: 8px;
+            z-index: 2
+        }
+
+        #document.skn-trz6 .right-box .sectiontitle {
+            padding-left: 35px
+        }
+
+        #document.skn-trz6 .headingIcon svg circle,
+        #document.skn-trz6 .monogram svg circle {
+            fill: #373d48
+        }
+
+
+        /* Icon */
+        #document.skn-trz6 .headingIcon svg {
+            width: 30px;
+            height: 30px
+        }
+
+        #document.skn-trz6 .headingIcon {
+            z-index: 4
+        }
+
+        #document.skn-trz6 .left-box .headingIcon {
+            left: -40px;
+            position: absolute
+        }
+
+        #document.skn-trz6 .right-box .headingIcon {
+            left: 0;
+            position: absolute
+        }
+
+        #document.skn-trz6 .headingIcon svg path {
+            fill: #fff
+        }
+
+        #document.skn-trz6 .ratingWrapper {
+            text-align: right
+        }
+
+        #document.skn-trz6 .ratingWrapper .noLnht {
+            line-height: 0
+        }
+
+        #document.skn-trz6 .ratingWrapper svg {
+            height: 13px
+        }
+
+        /* Issues fix for builder page */
+        #displayResume div#document.skn-trz6.document {
+            min-height: 792px
+        }
+
+        #document.skn-trz6>div {
+            min-height: inherit
+        }
+
+        #document.skn-trz6>div:not(.topsection),
+        #document.skn-trz6>div:not(.parentContainer) {
+            min-height: auto
+        }
+
+        #document.skn-trz6 .right-box>.sortable-item:first-child .section {
+            padding-top: 10px !important
+        }
+
+        #document.skn-trz6 .SortableInner>.sortable-item:last-of-type .singlecolumn>.pb5 {
+            margin-bottom: 0
+        }
+
+        #document.skn-trz6 .left-box>.sortable-item:first-child .section,
+        #document.skn-trz6 .right-box>.sortable-item:first-child .section {
+            padding-top: 0
+        }
+
+        #document.skn-trz6 .left-box .sortable-item:first-child>.section {
+            border: 0
+        }
+
+        #document.skn-trz6 .left-box .sortable-item:first-child+.sortable-item>.section {
+            padding-top: 0 !important
+        }
+
+        #document.skn-trz6 .ratingWrapper .default-fill {
+            fill: #373d48
+        }
+
+        #document.skn-trz6 .sortable-item .ratingWrapper span {
+            top: 0;
+            line-height: inherit
+        }
+
+        .finalize-resume-preview.TRZ6>#document.skn-trz6 {
+            border: 1px solid #e3e7e9 !important;
+        }
+
+        .finalize-resume-preview.TRZ6>#document.skn-trz6 .left-box {
+            padding-left: 85px
+        }
+
+        /* Only for firefox */
+        @-moz-document url-prefix() {
+            #document.skn-trz6 .parentContainer {
+                height: 1px
+            }
+        }
+
+        #document.skn-trz6 .resumeTitle {
+            font-weight: normal
+        }
+
+        #document.skn-trz6,
+        #document.skn-trz6 table {
+            line-height: 17px
+        }
+
+        #document.skn-trz6.fontface {
+            font-family: Century Gothic
+        }
+
+        #document.skn-trz6.fontsize {
+            font-size: 10px
+        }
+
+        #document.skn-trz6.pagesize {
+            width: 750px
+        }
+
+        #document.skn-trz6 .section {
+            padding-top: 15px
+        }
+
+        #document.skn-trz6 .left-box .section:after {
+            padding-bottom: 10px
+        }
+
+        #document.skn-trz6 .paragraph {
+            padding-bottom: 15px
+        }
+
+        #document.skn-trz6 .rtngSec .paragraph {
+            padding-bottom: 5px
+        }
+
+        #document.skn-trz6 .singlecolumn,
+        #document.skn-trz6 .maincolumn {
+            word-wrap: break-word
+        }
+
+        #document.skn-trz6 left-box .singlecolumn,
+        #document.skn-trz6 left-box .maincolumn {
+            margin-left: 0px
+        }
+
+        #document.skn-trz6 table.skills td {
+            padding-top: 3px
+        }
+
+        #document.skn-trz6 .jobtitle,
+        #document.skn-trz6 .degree,
+        #document.skn-trz6 .programline {
+            font-size: 13px
+        }
+
+        #document.skn-trz6 .name {
+            color: #1a409a;
+            font-size: 35px;
+            line-height: 42px
+        }
+
+        #document.skn-trz6 .monogram svg circle {
+            fill: #1a409a
+        }
+
+        #document.skn-trz6 .sectiontitle,
+        #document.skn-trz6 .resumeTitle {
+            font-size: 16px;
+            line-height: 23px
+        }
+
+        #document.skn-trz6 .sectiontitle {
+            color: #1a409a
+        }
+
+        #document.skn-trz6 .right-box {
+            width: 155px
+        }
+
+        #document.skn-trz6 .firstsection+.section:before {
+            height: -3px
+        }
+
+        #document.skn-trz6 .left-box .heading~.paragraph .date-content:before {
+            background: #1a409a
+        }
+
+        #document.skn-trz6 .left-box .singlecolumn:before {
+            background: #1a409a;
+            top: 5px
+        }
+
+        #document.skn-trz6 .left-box .paddedline.date-content {
+            line-height: 18px
+        }
+
+        #document.skn-trz6 .left-box .section.notdraggable+.section {
+            padding-top: 0px
+        }
+
+        /* Icon */
+        #document.skn-trz6 .headingIcon svg circle {
+            fill: #1a409a
+        }
+
+        #document.skn-trz6 .headingIcon {
+            top: -3px
+        }
+
+        /*Fixes for builder page*/
+        #document.skn-trz6 .sortableInner .sortable-item.active>.wrapper-bg+div[data-section] {
+            position: relative;
+            z-index: 8
+        }
+
+        .parent-drag.active#document.skn-trz6,
+        ._single-parent-drag.active#document.skn-trz6 {
+            border: 0 !important
+        }
+
+        #document.skn-trz6 .ratingWrapper .default-fill {
+            fill: #1a409a
+        }
+
+        /*Hover border style*/
+        #document.skn-trz6.active .wrapper-bg {
+            left: -62px !important;
+            right: -62px !important
+        }
+
+        #document.skn-trz6.active .acrs-bdr {
+            left: -60px !important
+        }
+
+        #document.skn-trz6.active .acr-edit,
+        #document.skn-trz6.active .acr-delete {
+            left: -59px !important
+        }
+
+        #document.skn-trz6.active .acr-move {
+            right: -59px !important
+        }
+        .jobdates {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="document" class="document fontsize fontface vmargins hmargins pagesize skn-trz6 TRZ6  ZTY">
+            <div id="CONTAINER_PARENT_0" class="parentContainer">
+                <div id="CONTAINER_0" class="left-box">
+                    <div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-NAME">
+                        <div id="SECTION_NAME945531d3-5e03-484a-88a9-12f484b71b4d"
+                            class="section notdraggable SECTION_NAME firstsection  " data-section-cd="NAME">
+                            <div class=" doc-item">
+                                <div class="">
+                                    <div class="">
+                                        <div id="PARAGRAPH_NAME_81ec8798-9516-5f47-4304-28abaf805a3e"
+                                            class="paragraph PARAGRAPH_NAME firstparagraph  ">
+                                            <div>
+                                                <div class="monogram" dependency="FNAM|LNAM">
+                                                    <svg height="86px" width="86px">
+                                                        <circle cx="43px" cy="43px" r="43px" fill="#003D74"></circle>
+                                                        <text text-anchor="middle" x="60px" y="68px" fill="#fff"
+                                                            font-size="20px" id="SUBSTR_FALN">RH</text>
+                                                    </svg>
+                                                </div>
+                                                <div class="name">
+                                                    <div class="flname txtBold word-break">
+                                                        <span class="field" id="FIELD_FNAM">Rudy</span>
+                                                        <span class="field" id="FIELD_LNAM">Hariyanto</span>
+                                                        <div class="resumeTitle" id="FIELD_DCTL">Software Developer
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                    <div data-react-beautiful-dnd-draggable="0"
+                        class="sortable-item section-container SortableItem-sibling data-SUMM">
+                        <div id="SECTION_SUMMfa41ebab-8df0-4c9b-a6bf-558732295339"
+                            class="section summary notdraggable SECTION_SUMM   " data-section-cd="SUMM">
+                            <div class=" doc-item">
+                                <div class="heading">
+                                    <div class="headingIcon">
+                                        <svg viewBox="0 0 54 54">
+                                            <circle cx="27" cy="27" r="26"></circle>
+                                            <path transform="translate(11,11)"
+                                                d="M31 15h-1.051C29.457 8.079 23.922 2.543 17 2.05V1a1 1 0 0 0-2 0v1.05C8.078 2.545 2.543 8.08 2.051 15H1a1 1 0 0 0 0 2h1.051C2.543 23.921 8.078 29.456 15 29.949V31a1 1 0 0 0 2 0v-1.05c6.922-.494 12.457-6.029 12.949-12.95H31a1 1 0 1 0 0-2zm-5 2h1.949c-.483 5.819-5.13 10.466-10.949 10.949V26a1 1 0 0 0-2 0v1.949C9.181 27.466 4.534 22.819 4.051 17H6a1 1 0 0 0 0-2H4.051C4.534 9.181 9.181 4.534 15 4.051V6a1 1 0 0 0 2 0V4.051c5.819.483 10.466 5.13 10.949 10.949H26a1 1 0 0 0 0 2z">
+                                            </path>
+                                            <path transform="translate(11,11)"
+                                                d="M19 16c0-1.654-1.346-3-3-3-1.655 0-3 1.346-3 3s1.345 3 3 3 3-1.346 3-3zm-4 0c0-.551.449-1 1-1 .551 0 1 .449 1 1 0 .551-.449 1-1 1-.551 0-1-.449-1-1z">
+                                            </path>
+                                            <path transform="translate(11,11)"
+                                                d="M17 10a1 1 0 0 0-1-1c-3.86 0-7 3.14-7 7a1 1 0 0 0 2 0c0-2.757 2.243-5 5-5a1 1 0 0 0 1-1zM22 15a1 1 0 0 0-1 1c0 2.757-2.244 5-5 5a1 1 0 1 0 0 2c3.86 0 7-3.14 7-7a1 1 0 0 0-1-1z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="sectiontitle" id="SECTIONNAME_SUMM">Professional Summary</div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <div id="PARAGRAPH_SUMM_f575d833-185b-7b42-9b4f-ba0f98af87db"
+                                            class="paragraph PARAGRAPH_SUMM firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="field singlecolumn noPind" id="FIELD_FRFM">
+                                                    <p>Forward-thinking Software Engineer with background working
+                                                        effectively in dynamic environments. Fluent in golang and react
+                                                        programming languages used to develop web application. Proud
+                                                        team player focused on achieving project objectives with speed
+                                                        and accuracy.</p>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                    <div data-react-beautiful-dnd-draggable="0"
+                        class="sortable-item section-container SortableItem-sibling data-EXPR">
+                        <div id="SECTION_EXPR1acd5127-c687-4829-898a-9ca57a3d9373"
+                            class="section SECTION_EXPR   multi-para" data-section-cd="EXPR">
+                            <div class=" doc-item">
+                                <div class="heading">
+                                    <div class="headingIcon">
+                                        <svg viewBox="0 0 54 54">
+                                            <circle cx="27" cy="27" r="26"></circle>
+                                            <path transform="translate(11,11)"
+                                                d="M30 5.983h-7.987V4.045c0-1.655-1.345-3-3-3h-6.015c-1.655 0-3 1.345-3 3v1.938H2.001C.9 5.983 0 6.883 0 7.982V28.953c0 1.1.9 2.001 2 2.001h28c1.099 0 2-.9 2-2V7.981a2.008 2.008 0 0 0-2-1.999zM12 4.045c0-.551.447-1 1-1h6.011c.55 0 1 .447 1 1v1.938H12V4.045zM2 7.982h28v7.008H18.986v-1.025c0-1.101-.897-2-1.998-2h-1.993c-1.101 0-2 .897-2 2v1.025H2V7.982zm14.989 11.02h-1.993v-5.037h1.993v5.037zM2 28.951V16.988h10.997V19c0 1.102.897 2 2 2h1.99a2.002 2.002 0 0 0 2-2v-2.01h11.011v11.963H2.001z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="sectiontitle" id="SECTIONNAME_EXPR">Work History</div>
+                                </div>
+                                <div class="">
+                                    <div class="sortableInner">
+                                        <div id="PARAGRAPH_EXPR_1993c797-6842-fb48-b339-f4ff36eec706"
+                                            class="paragraph PARAGRAPH_EXPR firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_JSTD"
+                                                        format="%Y-%m">2019-03</span><span dependency="JSTD+EDDT"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_EDDT"
+                                                        format="%Y-%m">Current</span><br
+                                                        dependency="JTIT|COMP|JSTA|JCIT">
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline" dependency="JTIT">
+                                                        <span class="jobtitle txtBold" id="FIELD_JTIT">Software
+                                                            Engineer</span>
+                                                    </span>
+                                                    <span class="paddedline locationGap pb5"
+                                                        dependency="COMP|JSTA|JCIT">
+                                                        <span class="companyname" id="FIELD_COMP">PT. Tokopedia</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                                        <span class="jobcity" id="FIELD_JCIT">Jakarta
+                                                            Selatan</span><span dependency="JCIT+JSTA">, </span>
+                                                        <span class="jobstate" id="FIELD_JSTA">DKI Jakarta</span>
+                                                    </span>
+                                                    <span class="jobline" id="FIELD_JDES">
+                                                        <ul>
+                                                            <li>Researched, designed and implemented scalable
+                                                                applications for information identification, extraction,
+                                                                analysis, retrieval and indexing.</li>
+                                                            <li>Collaborated with cross-functional development team
+                                                                members to analyze potential system solutions based on
+                                                                evolving client requirements.</li>
+                                                            <li>Improved system performance by making proactive
+                                                                adjustments and resolving bugs.</li>
+                                                            <li>Worked closely with other business analysts, development
+                                                                teams and infrastructure specialists to deliver high
+                                                                availability solutions for mission-critical
+                                                                applications.</li>
+                                                            <li>Reviewed project specifications and designed technology
+                                                                solutions that met or exceeded client expectations.</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_EXPR_24752864-8ebe-17f8-2399-57213930ab0c"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_JSTD"
+                                                        format="%Y-%m">2015-07</span><span dependency="JSTD+EDDT"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_EDDT"
+                                                        format="%Y-%m">2019-03</span><br
+                                                        dependency="JTIT|COMP|JSTA|JCIT">
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline" dependency="JTIT">
+                                                        <span class="jobtitle txtBold" id="FIELD_JTIT">Technical
+                                                            Consultant</span>
+                                                    </span>
+                                                    <span class="paddedline locationGap pb5"
+                                                        dependency="COMP|JSTA|JCIT">
+                                                        <span class="companyname" id="FIELD_COMP">PT. Graha Technosoft
+                                                            Informatika</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                                        <span class="jobcity" id="FIELD_JCIT">Jakarta Barat</span><span
+                                                            dependency="JCIT+JSTA">, </span>
+                                                        <span class="jobstate" id="FIELD_JSTA">DKI Jakarta</span>
+                                                    </span>
+                                                    <span class="jobline" id="FIELD_JDES">
+                                                        <ul>
+                                                            <li>Manage DMS module for Microsoft Dynamic CRM.</li>
+                                                            <li>Manage Property Management module for Microsoft
+                                                                Dynamic<br>
+                                                                Solomon.</li>
+                                                            <li>Deliver custom apps solution (Desktop, Web, Mobile).
+                                                            </li>
+                                                            <li>Analyzed client business processes to propose optimal
+                                                                software applications for unique requirements.</li>
+                                                            <li>Evaluated and adopted new technologies to address
+                                                                changing industry needs.</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_EXPR_57f99abe-46fe-b383-6449-9ae9f6e82f32"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_JSTD"
+                                                        format="%Y-%m">2014-12</span><span dependency="JSTD+EDDT"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_EDDT"
+                                                        format="%Y-%m">2015-06</span><br
+                                                        dependency="JTIT|COMP|JSTA|JCIT">
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline" dependency="JTIT">
+                                                        <span class="jobtitle txtBold" id="FIELD_JTIT">Software
+                                                            Engineer</span>
+                                                    </span>
+                                                    <span class="paddedline locationGap pb5"
+                                                        dependency="COMP|JSTA|JCIT">
+                                                        <span class="companyname" id="FIELD_COMP">Solis
+                                                            Consulting</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                                        <span class="jobcity" id="FIELD_JCIT">Jakarta Barat</span><span
+                                                            dependency="JCIT+JSTA">, </span>
+                                                        <span class="jobstate" id="FIELD_JSTA">DKI Jakarta</span>
+                                                    </span>
+                                                    <span class="jobline" id="FIELD_JDES">
+                                                        <ul>
+                                                            <li>Researched, designed and implemented scalable
+                                                                applications for information identification, extraction,
+                                                                analysis, retrieval and indexing.</li>
+                                                            <li>Walked clients and internal staff through
+                                                                troubleshooting steps to resolve common software issues.
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_EXPR_e0d34a41-920c-2bad-b586-129dde32964d"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_JSTD"
+                                                        format="%Y-%m">2011-05</span><span dependency="JSTD+EDDT"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_EDDT"
+                                                        format="%Y-%m">2014-01</span><br
+                                                        dependency="JTIT|COMP|JSTA|JCIT">
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline" dependency="JTIT">
+                                                        <span class="jobtitle txtBold" id="FIELD_JTIT">Assistant
+                                                            Manager</span>
+                                                    </span>
+                                                    <span class="paddedline locationGap pb5"
+                                                        dependency="COMP|JSTA|JCIT">
+                                                        <span class="companyname" id="FIELD_COMP">PT. Aevitas
+                                                            Consulting</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                                        <span class="jobcity" id="FIELD_JCIT">Jakarta Barat</span><span
+                                                            dependency="JCIT+JSTA">, </span>
+                                                        <span class="jobstate" id="FIELD_JSTA">DKI Jakarta</span>
+                                                    </span>
+                                                    <span class="jobline" id="FIELD_JDES">
+                                                        <ul>
+                                                            <li>Manage developer team</li>
+                                                            <li>Manage Membership &amp; Mini ERP system</li>
+                                                            <li>Research &amp; Development Mini CRM system</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_EXPR_2c64a84b-ba48-9356-90b3-994eff693106"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_JSTD"
+                                                        format="%Y-%m">2009-05</span><span dependency="JSTD+EDDT"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_EDDT"
+                                                        format="%Y-%m">2010-10</span><br
+                                                        dependency="JTIT|COMP|JSTA|JCIT">
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline" dependency="JTIT">
+                                                        <span class="jobtitle txtBold" id="FIELD_JTIT">Digital Promotion
+                                                            Maker</span>
+                                                    </span>
+                                                    <span class="paddedline locationGap pb5"
+                                                        dependency="COMP|JSTA|JCIT">
+                                                        <span class="companyname" id="FIELD_COMP">PT. Caturwangsa
+                                                            Indah</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                                        <span class="jobcity" id="FIELD_JCIT">Tasikmalaya</span><span
+                                                            dependency="JCIT+JSTA">, </span>
+                                                        <span class="jobstate" id="FIELD_JSTA">Jawa Barat</span>
+                                                    </span>
+                                                    <span class="jobline" id="FIELD_JDES">
+                                                        <ul>
+                                                            <li>Create a website that show all of the company products.
+                                                            </li>
+                                                            <li>Create an interactive promotional cd that shows how the
+                                                                product manufacturing process works.</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                    <div data-react-beautiful-dnd-draggable="0"
+                        class="sortable-item section-container SortableItem-sibling data-EDUC">
+                        <div id="SECTION_EDUCabb19595-2ce2-4ce8-b15b-ef6db1b59280"
+                            class="section SECTION_EDUC   multi-para" data-section-cd="EDUC">
+                            <div class=" doc-item">
+                                <div class="heading">
+                                    <div class="headingIcon">
+                                        <svg viewBox="0 0 54 54">
+                                            <circle cx="27" cy="27" r="26"></circle>
+                                            <path transform="translate(11,11)"
+                                                d="M30.96 22.58v-9.217l.503-.303c.327-.194.533-.58.537-1 .004-.421-.196-.81-.518-1.014L16.44 1.848a.893.893 0 0 0-.967.004l-14.96 9.21c-.318.202-.515.587-.513 1.005.002.417.203.8.525.998l6.573 3.999a1.256 1.256 0 0 0-.133.56v9.669c0 .325.122.637.335.853.217.22 2.294 2.146 8.646 2.146 6.33 0 8.463-1.82 8.686-2.028a1.21 1.21 0 0 0 .367-.884v-9.917c0-.16-.03-.313-.082-.452l4.044-2.441v8.016c-.593.396-.995 1.124-.995 1.965 0 1.262.895 2.285 2 2.285 1.104 0 1.999-1.023 1.999-2.285 0-.845-.407-1.576-1.005-1.97zM23 26.725c-.787.432-2.866 1.282-7.054 1.282-4.214 0-6.246-.905-6.982-1.34v-8.468l6.493 3.95a.892.892 0 0 0 .937.006L23 18.17v8.556zm-7.06-6.876L3.08 12.045l12.881-7.89 12.922 7.868L15.94 19.85z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="sectiontitle" id="SECTIONNAME_EDUC">Education</div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <div id="PARAGRAPH_EDUC_b61bf860-cd35-7aaa-4700-434d5c038cf6"
+                                            class="paragraph PARAGRAPH_EDUC firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="paddedline date-content">
+                                                    <span class="jobdates" id="FIELD_GRST"
+                                                        format="%Y-%m">2006-06</span><span dependency="GRST+GRED"> -
+                                                    </span>
+                                                    <span class="jobdates" id="FIELD_GRED" format="%Y-%m">2010-06</span>
+                                                </div>
+                                                <div class="singlecolumn">
+                                                    <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY">
+                                                        <span class="degree" id="FIELD_DGRE">Bachelor's Degree in
+                                                            Computer Science</span>
+                                                    </span>
+                                                    <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                                        <span class="companyname" id="FIELD_SCHO">Bina
+                                                            Nusantara</span><span dependency="SCHO+SSTA|SCIT"> -
+                                                        </span><span class="joblocation jobcity" id="FIELD_SCIT">Jakarta
+                                                            Barat</span><span class="joblocation jobstate"
+                                                            id="FIELD_SSTA"></span>
+                                                    </div>
+                                                    <span class="field" id="FIELD_FRFM"></span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="CONTAINER_1" class="right-box">
+                    <div data-react-beautiful-dnd-draggable="0"
+                        class="sortable-item section-container SortableItem-sibling data-CNTC">
+                        <div id="SECTION_CNTC44c38b34-37da-481a-88f2-f60e2d5d8ccf"
+                            class="section SECTION_CNTC notdraggable   " data-section-cd="CNTC">
+                            <div class=" doc-item">
+                                <div class="heading">
+                                    <div class="headingIcon">
+                                        <svg viewBox="0 0 54 54">
+                                            <circle cx="27" cy="27" r="26"></circle>
+                                            <path transform="translate(11,11)"
+                                                d="M31.85 27.626c-1.38-3.684-3.906-4.604-5.973-4.835-1.608-.23-3.216-.92-3.905-1.38v-2.533c1.838-2.302 2.986-5.295 2.986-7.828C24.958 4.835 21.972 0 16 0c-5.972 0-8.958 5.065-8.958 11.05 0 2.763 1.148 5.756 2.986 7.828v2.762c-.69.46-2.297.921-3.905 1.382-2.067.23-4.364 1.15-5.972 4.834-.23.46-.23 1.151.23 1.612C1.759 31.54 9.798 32 16 32c6.432 0 14.241-.46 15.62-2.532.459-.46.459-1.151.23-1.842zM16 1.842c4.594 0 7.152 4.394 7.152 9.228-.28 4.546-2.666 8.112-7.232 8.456-4.449-.462-6.926-4.804-7.04-8.573 0-4.604 2.526-9.111 7.12-9.111zm0 28.086c-12.174 0-14.012-1.611-14.012-1.611 1.149-2.993 2.757-3.454 4.365-3.684 1.837-.23 3.675-.92 4.594-1.381l.918-.46v-2.073c1.149.921 2.527 1.382 4.135 1.382 1.378 0 2.756-.46 3.905-1.382v2.072l.919.46c.918.461 2.756 1.152 4.594 1.382 1.607.23 3.215.69 4.364 3.684.23 0-1.608 1.611-13.782 1.611z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="sectiontitle" id="SECTIONNAME_CNTC">Contact</div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <div id="PARAGRAPH_CNTC_cce8ae2b-023a-30d2-f2c2-88027c6b9a71"
+                                            class="paragraph PARAGRAPH_CNTC firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="address">
+                                                    <div class="singlecolumn">
+                                                        <div dependency="STRT|CITY|STAT|ZIPC">
+                                                            <div class="txtBold">Address </div>
+                                                            <div class="field" id="FIELD_STRT"></div>
+                                                            <span class="field" id="FIELD_CITY">Cengkareng</span><span
+                                                                dependency="CITY+STAT|ZIPC">,</span>
+                                                            <span class="field" id="FIELD_STAT">Jakarta Barat</span>
+                                                            <span class="field" id="FIELD_ZIPC"></span>
+                                                        </div>
+                                                        <div class="txtBold pt5" dependency="HPHN|CPHN">Phone </div>
+                                                        <div dependency="HPHN">
+                                                            <span class="field" id="FIELD_HPHN">08569092962</span>
+                                                        </div>
+
+                                                        <div class="txtBold pt5" dependency="EMAI">E-mail </div>
+                                                        <div dependency="EMAI" class="word-break">
+                                                            <span class="field"
+                                                                id="FIELD_EMAI">script.kiddie.1988@gmail.com</span>
+                                                        </div>
+                                                        <div dependency="SOCL">
+
+                                                            <div id="CATEGORY_SOCIAL_SOCL" class="pt5">
+                                                                <div id="DOCDATAINFO_SOCL" class="txtBold">Twitter</div>
+                                                                <div id="FIELD_SOCL">twitter.com/scriptkiddie88</div>
+                                                            </div>
+                                                            <div id="CATEGORY_SOCIAL_SOCL" class="pt5">
+                                                                <div id="DOCDATAINFO_SOCL" class="txtBold">LinkedIn
+                                                                </div>
+                                                                <div id="FIELD_SOCL">linkedin.com/in/scriptkiddie88
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                    <div data-react-beautiful-dnd-draggable="0"
+                        class="sortable-item section-container SortableItem-sibling data-HILT">
+                        <div id="SECTION_HILT9a7ace05-43d1-4064-b4f0-b2a57664abd9"
+                            class="section rtngSec SECTION_HILT   " data-section-cd="HILT">
+                            <div class=" doc-item">
+                                <div class="heading">
+                                    <div class="headingIcon">
+                                        <svg viewBox="0 0 54 54">
+                                            <circle cx="27" cy="27" r="26"></circle>
+                                            <path transform="translate(11,11)"
+                                                d="M31.36 14.293l-3.413-3.413c2.133-.64 3.84-2.773 3.84-5.333C31.787 2.56 29.227 0 26.24 0c-2.347 0-4.48 1.707-5.333 3.84l-3.2-3.2c-.854-.853-2.56-.853-3.414 0L9.6 5.333c-.213.427-.213.854-.213 1.28.213.427.64.64 1.066.427h.64c2.134 0 3.84 1.707 3.84 4.053 0 2.134-1.493 4.054-3.84 4.054-2.133 0-4.053-1.92-4.053-4.054v-.64a1.63 1.63 0 0 0-.427-1.066c-.213-.427-.64-.427-.853 0L.64 14.293c-.853.854-.853 2.347 0 3.414L14.293 31.36c.427.427 1.067.64 1.707.64.64 0 1.28-.213 1.707-.64L31.36 17.707c.853-.854.853-2.56 0-3.414zm-1.493 1.92L16.213 29.867c-.213.213-.426.213-.64 0L2.133 16.213c-.213 0-.213-.426 0-.426l3.414-3.414a5.953 5.953 0 0 0 5.76 4.48c3.2 0 5.76-2.56 5.76-5.973 0-2.773-1.707-5.12-4.267-5.76l2.987-2.987c.213-.213.426-.213.64 0l4.906 4.907c.214.213.854.427 1.067.213.427-.213.64-.64.64-1.066v-.214-.213c0-1.92 1.493-3.413 3.413-3.413 1.92 0 3.414 1.493 3.414 3.413 0 1.92-1.494 3.413-3.414 3.413h-.426c-.427 0-.854.214-1.067.64-.213.427-.213.854.213 1.067l4.694 4.907c.213 0 .213.426 0 .426z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="sectiontitle" id="SECTIONNAME_HILT">Skills</div>
+                                </div>
+                                <div class="">
+                                    <div class="sortableInner">
+                                        <div id="PARAGRAPH_HILT_1e92b049-d15e-6e2c-ae3a-ff93f4b91595"
+                                            class="paragraph PARAGRAPH_HILT firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn maincolumn">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <ul>
+                                                            <p>Golang</p>
+                                                        </ul>
+                                                    </span>
+                                                    <div class="ratingWrapper" dependency="RATV">
+                                                        <div class="noLnht">
+                                                            <svg viewBox="0 0 500 100" id="FIELD_RATV" type="count">
+                                                                <circle cx="50" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="150" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="250" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="350" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="450" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="paddedline" id="FIELD_RATT"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_HILT_a76c186f-4adb-3f6f-502e-16a6ec4ac897"
+                                            class="paragraph PARAGRAPH_HILT  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn maincolumn">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <p>C#.net</p>
+                                                    </span>
+                                                    <div class="ratingWrapper" dependency="RATV">
+                                                        <div class="noLnht">
+                                                            <svg viewBox="0 0 500 100" id="FIELD_RATV" type="count">
+                                                                <circle cx="50" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="150" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="250" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="350" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="450" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="paddedline" id="FIELD_RATT"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_HILT_18aaea2f-6aa1-3aef-efcf-48df4f864fc1"
+                                            class="paragraph PARAGRAPH_HILT  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn maincolumn">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <p>React</p>
+                                                    </span>
+                                                    <div class="ratingWrapper" dependency="RATV">
+                                                        <div class="noLnht">
+                                                            <svg viewBox="0 0 500 100" id="FIELD_RATV" type="count">
+                                                                <circle cx="50" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="150" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="250" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="350" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="450" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="paddedline" id="FIELD_RATT"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_HILT_f56a32ae-8ee1-7c33-02d9-6ec0b022c1b2"
+                                            class="paragraph PARAGRAPH_HILT  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn maincolumn">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <p>Vue.js</p>
+                                                    </span>
+                                                    <div class="ratingWrapper" dependency="RATV">
+                                                        <div class="noLnht">
+                                                            <svg viewBox="0 0 500 100" id="FIELD_RATV" type="count">
+                                                                <circle cx="50" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="150" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="250" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="350" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="450" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="paddedline" id="FIELD_RATT"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div id="PARAGRAPH_HILT_71e9eeba-0840-2c1e-1ca9-99e30b7dcf85"
+                                            class="paragraph PARAGRAPH_HILT  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn maincolumn">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <p>Database</p>
+                                                    </span>
+                                                    <div class="ratingWrapper" dependency="RATV">
+                                                        <div class="noLnht">
+                                                            <svg viewBox="0 0 500 100" id="FIELD_RATV" type="count">
+                                                                <circle cx="50" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="150" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="250" cy="50" r="40" fill="#1a409a"
+                                                                    class="default-fill"></circle>
+                                                                <circle cx="350" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                                <circle cx="450" cy="50" r="40" fill="#d5d6d6"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="paddedline" id="FIELD_RATT"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-22px; right: -22px;">
+                                                <span class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-overlay section-overlay" style="left:-22px; right: -22px;">
+                                <span>&nbsp;</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
