@@ -5,6 +5,7 @@ import route from './const/route';
 
 import Home from './components/home';
 import AevitasPrivacyPolicy from './components/aevitas-privacy-policy';
+import LabaPOSPrivacyPolicy from './components/labapos-privacy-policy';
 import OctalianaPrivacyPolicy from './components/octaliana-privacy-policy';
 
 import PageNotFound from './components/404';
@@ -24,6 +25,13 @@ let router = new Router({
         {
             path: route.aevitasPrivacyPolicy,
             component: AevitasPrivacyPolicy,
+            meta: {
+                title: 'Privacy Policy',
+            },
+        },
+        {
+            path: route.labaposPrivacyPolicy,
+            component: LabaPOSPrivacyPolicy,
             meta: {
                 title: 'Privacy Policy',
             },
