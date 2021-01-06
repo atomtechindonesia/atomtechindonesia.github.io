@@ -502,7 +502,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  home: '/',\n  aevitasPrivacyPolicy: '/aevitas-privacy-policy',\n  labaposPrivacyPolicy: '/labapos-privacy-policy',\n  octalianaPrivacyPolicy: '/octaliana-privacy-policy'\n});\n\n//# sourceURL=webpack:///./src/const/route.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  home: '/',\n  aevitasPrivacyPolicy: '/aevitas-privacy-policy',\n  labaposPrivacyPolicy: '/labapos-privacy-policy',\n  octalianaPrivacyPolicy: '/octaliana-privacy-policy',\n  appAds: '/app-ads.txt'\n});\n\n//# sourceURL=webpack:///./src/const/route.js?");
 
 /***/ }),
 

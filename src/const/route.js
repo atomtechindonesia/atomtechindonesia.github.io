@@ -3,4 +3,5 @@ export default {
     aevitasPrivacyPolicy: '/aevitas-privacy-policy',
     labaposPrivacyPolicy: '/labapos-privacy-policy',
     octalianaPrivacyPolicy: '/octaliana-privacy-policy',
+    appAds: '/app-ads.txt'
 };

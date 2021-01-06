@@ -108,6 +108,6 @@ module.exports = (env, argv) => ({
         https: true,
         open: true,
         overlay: true,
-        port: 8081
+        port: 8082
     }
 });
