@@ -7,7 +7,7 @@
     <h4 class="mt-4 mb-5">-- Empowering Your Business --</h4>
     <h6>Contact us</h6>
     <h6 class="mt-3">
-      <b>0812 9030 6636</b>
+      <b>0856 909 2962</b>
     </h6>
   </div>
 </template>
