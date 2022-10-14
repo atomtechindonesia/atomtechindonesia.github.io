@@ -7,6 +7,7 @@ import Home from './components/home';
 import AevitasPrivacyPolicy from './components/aevitas-privacy-policy';
 import LabaPOSPrivacyPolicy from './components/labapos-privacy-policy';
 import OctalianaPrivacyPolicy from './components/octaliana-privacy-policy';
+import SuburPlastWarehouseSystemPrivacyPolicy from './components/subur-plast-warehouse-system-privacy-policy';
 
 import PageNotFound from './components/404';
 
@@ -39,6 +40,13 @@ let router = new Router({
         {
             path: route.octalianaPrivacyPolicy,
             component: OctalianaPrivacyPolicy,
+            meta: {
+                title: 'Privacy Policy',
+            },
+        },
+        {
+            path: route.suburPlastWarehouseSystemPrivacyPolicy,
+            component: SuburPlastWarehouseSystemPrivacyPolicy,
             meta: {
                 title: 'Privacy Policy',
             },
